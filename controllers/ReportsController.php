@@ -1,29 +1,17 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+include '../Repositories/ReportsRepository.php';
 
-/**
- * Description of aerolinea_controller
- *
- * @author Sergio
- */
-include '../Modelo/aerolinea.php';;
-include '../repo/aerolinea_repo.php';
-class aerolinea_controller {
-     function save($aerolinea) {
-        $repositorio = new aerolinea_repo;
+class ReportsController {
 
-$repositorio->save($aerolinea);
-print_r($aerolinea);
-
+    static function getOrdersByCustomer($customerNumber) {
+        $repo = new ReportsRepository();
+        return $repo->getOrdersByCustomer($customerNumber);
     }
+
+    static function getPurchaseCustomer() {
+        $repo = new ReportsRepository();
+        return $repo->getPurchaseCustomer();
+    }
+
 }
-$controller= new aerolinea_controller();
-$aerolinea= new aerolinea;
-$aerolinea ->setNit($_POST ['Nit']);
-$aerolinea ->setNombre($_POST ['nombre']);
-$controller->save($aerolinea);

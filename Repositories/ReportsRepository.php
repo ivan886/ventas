@@ -1,11 +1,11 @@
 <?php
 
-
 require_once '../config/Connection.php';
 
-class ReportesRepository{
+class ReportsRepository{
 
     public function getOrdersByCustomer($customerNumber) {
+        
         $sql = "select * 
                 from customers cu
                 inner join orders ord
@@ -42,3 +42,4 @@ class ReportesRepository{
         return $rows;
     }
 }
+
