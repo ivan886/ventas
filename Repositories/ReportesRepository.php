@@ -5,38 +5,21 @@ require_once '../config/Connection.php';
 
 class ReportesRepository{
 
-    public function getAll() {
-        $sql = "select * from customers";
+    public function getOrdersByCustomer($customerNumber) {
+        $sql = "select * 
+                from customers cu
+                inner join orders ord
+                on cu.customerNumber=ord.customerNumber
+                where cu.customerNumber=:customerNumber";
         $conn= Connection::getConnection();
         $resource = $conn->prepare($sql);
+        $resource->bindParam(':customerNumber',$customerNumber);   
         $resource->execute();
         $rows = $resource->fetchAll(PDO::FETCH_OBJ);
         return $rows;
     }
 
-    public function getById() {
-        
-    }
-
-    public function delete() {
-        
-    }
-
-    public function save($aerolinea) {
-
-        $sql = " insert into "
-                . " aerolinea (nombre,Nit) "
-                . "  values (:nombre,:Nit)";
-
-
-
-        $resource = getConection()->prepare($sql);
-        $resource->bindValue(":nombre", $aerolinea->getNombre());
-        $resource->bindValue(":Nit", $aerolinea->getNit());
-        $resource->execute();
-    }
-
 }
 
 $repo = new ReportesRepository();
-print_r($repo->getAll());
+print_r($repo->getOrdersByCustomer(112));
