@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Repositories\ReportsRepository;
+
 class ReportsController {
 
     static function getOrdersByCustomer($customerNumber) {
@@ -15,3 +17,4 @@ class ReportsController {
     }
 
 }
+

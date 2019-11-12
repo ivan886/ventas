@@ -1,9 +1,22 @@
 
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="../assets/css/design.css" rel="stylesheet" type="text/css"/>
         <meta charset="UTF-8">
         <title></title>
     </head>
+    <nav>
+        <div>logo</div>
+        <div>
+            <ul>
+                <li>Inicio</li>
+                <li>Comprar</li>
+                <li>Acerca de</li>
+            </ul>
+        </div>
+    </nav>
+    
     <body>
         <?php
         require_once '../../../app/bootstrap.php';
