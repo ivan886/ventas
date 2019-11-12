@@ -41,9 +41,8 @@
  * Portions Copyrighted 2011 Sun Microsystems, Inc.
  */
 
-/**
- * Application config.
- */
+namespace App\Config;
+
 final class Config {
 
     /** @var array config data */

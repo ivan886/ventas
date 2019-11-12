@@ -1,7 +1,7 @@
 <?php
 
-require_once  '../Repositories/ProductsRepository.php';
-require_once  '../models/Product.php';
+namespace App\Controller;
+use App\Repositories\ProductsRepository;
 
 class ProductsController {
     public static  function findAll() {
@@ -29,3 +29,4 @@ class ProductsController {
         $repo->update($product);
     }
 }
+

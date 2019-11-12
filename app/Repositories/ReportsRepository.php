@@ -1,6 +1,8 @@
 <?php
 
-require_once '../config/Connection.php';
+namespace App\Repositories;
+use App\Config\Connection;
+use \PDO;
 
 class ReportsRepository{
 

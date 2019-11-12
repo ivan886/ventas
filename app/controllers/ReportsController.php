@@ -1,6 +1,6 @@
 <?php
 
-include '../Repositories/ReportsRepository.php';
+namespace App\Controller;
 
 class ReportsController {
 

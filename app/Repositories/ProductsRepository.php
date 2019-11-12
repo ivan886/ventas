@@ -1,7 +1,8 @@
 <?php
+namespace App\Repositories;
 
-require_once '../config/Connection.php';
-require_once '../models/Products.php';
+use App\Config\Connection;
+use \PDO;
 
 class ProductsRepository {
 
@@ -114,3 +115,5 @@ class ProductsRepository {
     }
 
 }
+
+
