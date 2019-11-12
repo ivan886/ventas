@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
  <?php
-require_once '../controllers/ReportsController.php';
+require_once '../../controllers/ReportsController.php';
  ?>
 <html>
     <head>
