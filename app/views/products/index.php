@@ -10,9 +10,9 @@
         <div>logo</div>
         <div>
             <ul>
-                <li>Inicio</li>
-                <li>Comprar</li>
-                <li>Acerca de</li>
+                <li><a>Inicio</a></li>
+                <li><a>Comprar</a></li>
+                <li><a>Acerca de</a></li>
             </ul>
         </div>
     </nav>
