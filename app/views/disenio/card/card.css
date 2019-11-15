@@ -1,10 +1,27 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Nov 15, 2019, 5:33:52 AM
-    Author     : ivan
-*/
+.contenedor{
+    display: block ruby;
+}
 
+.card{
+    margin: 25px;
+    border-radius: 15px;
+    width: 25%;
+    box-shadow: 3px 5px 66px -14px rgba(0,0,0,0.32);
+    -webkit-box-shadow: 3px 5px 66px -14px rgba(0,0,0,0.32);
+    -moz-box-shadow: 3px 5px 66px -14px rgba(0,0,0,0.32);
+}
+.card:hover{
+    box-shadow: 5px 5px 66px 4px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 5px 5px 66px 4px rgba(0,0,0,0.35);
+    -moz-box-shadow: 5px 5px 66px 4px rgba(0,0,0,0.35);
+}
+.card-img{
+    width: 100%;
+    height:100%;
+     border-radius: 15px;
+}
+
+.contenido{
+    border-top: 0.5px solid #F0F0F0;
+    padding: 15px;
+}

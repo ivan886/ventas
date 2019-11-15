@@ -1,10 +1,21 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Nov 15, 2019, 7:23:11 AM
-    Author     : ivan
-*/
+body{
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    padding: 20px;
+}
+
+.titulo {    
+    font-family: 'Press Start 2P', cursive;
+    border: 2px solid #FFCA3A;
+    font-size: 90px;  
+    font-weight: bold;
+    text-align: right;
+    background: linear-gradient(90deg, rgba(255,89,94,1) 0%, rgba(255,202,58,1) 72%);
+    color:white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    
+}
+
 
